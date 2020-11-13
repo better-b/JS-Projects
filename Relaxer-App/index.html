@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#" />
+    <title>Relaxer App</title>
+</head>
+<body>
+    <div class="app">
+        <div class="video-container">
+            <video loop>
+                <source src="./video/rain.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <div class="time-picker">
+            <button data-time="10">2 Minutes</button>
+            <button data-time="300">5 Minutes</button>
+            <button data-time="600">10 Minutes</button>
+        </div>
+        <div class="play-container">
+            <audio class="song">
+                <source src="./sound/rain.wav" type="audio/wav"/>
+            </audio>
+            <img src="Img/play.svg" class="play"/>
+            <svg class="outline"
+                width="253"
+                height="253"
+                viewbox="0 0 253 253"
+                fill="none">
+                    <circle
+                    cx="126.5"
+                    cy="126.5"
+                    r="116.5"
+                    stroke="black"
+                    stroke-width="12"/>
+            </svg>
+            <svg class="moving-outline"
+                width="253"
+                height="253"
+                viewbox="0 0 253 253"
+                fill="none">
+                    <circle
+                        cx="126.5"
+                        cy="126.5"
+                        r="116.5"
+                        stroke="white"
+                        stroke-width="12" />
+            </svg>
+            <!-- <img src="./Img/replay.png" class="replay"/> -->
+            <h2 class="time-display">0:00</h2>
+        </div>
+        <div class="sound-picker">
+            <button data-sound="./sound/beach.wav" data-video="./video/beach.mp4">
+                <img src="./Img/sun.png"/>
+            </button>
+            <button data-sound="./sound/rain.wav" data-video="./video/rain.mp4">
+                <img src="./Img/rain.svg" />
+            </button>
+            <button data-sound="./sound/forest.wav" data-video="./video/forest.mp4">
+                <img src="./Img/bird.svg" />
+            </button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
